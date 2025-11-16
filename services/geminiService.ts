@@ -13,11 +13,11 @@ const fileToGenerativePart = async (file: File) => {
 };
 
 export const analyzeImageWithGemini = async (imageFile: File): Promise<string> => {
-  if (!process.env.API_KEY) {
-    throw new Error("API_KEY environment variable not set");
+  if (!process.env.GEMINI_API_KEY) {
+    throw new Error("GEMINI_API_KEY environment variable not set");
   }
   
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
   const model = 'gemini-2.5-flash';
   
