@@ -1,0 +1,7 @@
+{
+  "name": "DVA: Drone Vision for Archaeology",
+  "description": "An application allowing drone owners to upload aerial images for archaeological analysis, helping to identify potential excavation sites using AI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
